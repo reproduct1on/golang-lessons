@@ -12,17 +12,6 @@ func main(){
 }
 
 func calcFibonachi(n int) int{
-
-	// switch (n) {
-	// 	case 0:
-	// 		return 0
-	// 	break	
-	// 	case 1: 
-	// 		return 1
-	// 	break
-	// 	default:
-	// 		return Fibonachi(n - 1) + Fibonachi(n - 2)
-	// }
 	if (n == 1){
 		return 0
 	} else if (n == 2)||(n == 3){
