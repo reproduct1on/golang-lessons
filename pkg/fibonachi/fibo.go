@@ -1,4 +1,4 @@
-package main
+package fibonachi
 
 import(
 
@@ -6,21 +6,20 @@ import(
 
 )
 
-func main(){
-	Fibonachi(4)
-	FibonachiMulti(4,3,4,2,10)
-}
+
 
 func calcFibonachi(n int) int{
-	if (n == 1){
+	if (n == 0){
 		return 0
-	} else if (n == 2)||(n == 3){
+	} else if (n == 1)||(n == 2){
 		return 1
 	}else {
 		return calcFibonachi(n - 1) + calcFibonachi(n - 2)
 	}
-	return n
 }
+
+
+
 func Fibonachi(n int) {
 	fmt.Println("fibonachi",calcFibonachi(n))
 }
